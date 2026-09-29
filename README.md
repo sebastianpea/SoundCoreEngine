@@ -135,9 +135,6 @@ En operaciones frecuentes de inserción intermedia, las listas enlazadas son sus
 
 ---
 
-## 🎥 8. Video Demostrativo (Máximo 3 Minutos)
+## 🎥 8. Video Demostrativo
 
-* **Enlace al video de evaluación:** [PEGA_AQUÍ_EL_LINK_DE_YOUTUBE_O_DRIVE]
-  * **0:00 - 1:15:** Demostración en vivo de las 6 operaciones de cola en la interfaz WinForms.
-  * **1:15 - 2:00:** Ejecución de la prueba de benchmark (25,000 inserciones) y explicación de la telemetría.
-  * **2:00 - 3:00:** Explicación técnica del método `Invert()` señalando los 3 punteros auxiliares.
+* **Enlace al video de evaluación:** (https://youtu.be/iSG9G3SUVF0)

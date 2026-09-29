@@ -1,4 +1,4 @@
-﻿using SoundCoreEngine.Models;
+using SoundCoreEngine.Models;
 using SoundCoreEngine.OwnStructures;
 using System;
 using System.Collections.Generic;
@@ -79,7 +79,10 @@ namespace SoundCoreEngine.Motor
                         _linkedListQueue.AddAfter(_linkedListQueue.First, track);
                     break;
                 case StructureType.ListNative:
-                    _listQueue.Insert(0, track); // Inserta al inicio para que sea la siguiente
+                    if (_listQueue.Count <= 1)
+                        _listQueue.Add(track);
+                    else
+                        _listQueue.Insert(1, track);
                     break;
             }
             QueueUpdated?.Invoke();

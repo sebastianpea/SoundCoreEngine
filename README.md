@@ -4,8 +4,8 @@
 > **TecNM Campus Monclova — Ingeniería en Informática**  
 > **Asignatura:** Estructura de Datos (3er Semestre)  
 > **Unidad:** 2 — Estructuras de Datos Lineales  
-> **Alumno:** Sebastian Pea  
-> **Número de Control:** [TU_NUMERO_DE_CONTROL_AQUI]  
+> **Alumno:** Sebastian Ponce Carmona  
+> **Número de Control:** I25050377  
 > **Docente:** [NOMBRE_DEL_PROFESOR]  
 > **Fecha:** Septiembre 2026  
 

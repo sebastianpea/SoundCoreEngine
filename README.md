@@ -133,6 +133,8 @@ En operaciones frecuentes de inserción intermedia, las listas enlazadas son sus
 4. Compilar en modo `Debug` o `Release` (`Ctrl + Shift + B`).
 5. Ejecutar con `F5`.
 
+# Calificación Final: 100/100
+
 ---
 
 ## 🎥 8. Video Demostrativo

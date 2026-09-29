@@ -70,9 +70,7 @@ namespace SoundCoreEngine.OwnStructures
             Count--;
             return value;
         }
-
-        // 4. In-place inversion: O(n) time, O(1) auxiliary memory
-        // 3-pointer technique: previous, current, next. Only redirects links.
+        //in-place, con complejidad O(n) en tiempo y cero memoria auxiliar O(1).
         public void Invert()
         {
             Node<T>? previous = null;
@@ -80,16 +78,15 @@ namespace SoundCoreEngine.OwnStructures
 
             while (current != null)
             {
-                Node<T>? next = current.Next;
-                current.Next = previous;
-                previous = current;
-                current = next;
+                Node<T>? next = current.Next;  // 1. Guardar referencia al resto de la lista
+                current.Next = previous;       // 2. Invertir el puntero hacia el nodo anterior
+                previous = current;            // 3. Desplazar 'previous' al nodo actual
+                current = next;                // 4. Desplazar 'current' al nodo siguiente
             }
 
-            Head = previous;
+            Head = previous;                  // 5. La nueva cabeza es el último nodo alcanzado
         }
 
-        // 5. Ordered insertion by criterion (e.g., BPM): O(n)
         public void InsertOrdered(T value, Comparison<T> comparer)
         {
             var newNode = new Node<T>(value);

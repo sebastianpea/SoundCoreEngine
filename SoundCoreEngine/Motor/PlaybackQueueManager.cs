@@ -164,15 +164,15 @@ namespace SoundCoreEngine.Motor
             {
                 case StructureType.CustomList:
                     _customQueue.RemoveDuplicates((a, b) =>
-                        a.Title.Equals(b.Title, StringComparison.OrdinalIgnoreCase));
+                        a.Title.Trim().Equals(b.Title.Trim(), StringComparison.OrdinalIgnoreCase));
                     break;
                 case StructureType.LinkedListNative:
-                    var unicosLL = _linkedListQueue.DistinctBy(p => p.Title).ToList();
+                    var unicosLL = _linkedListQueue.DistinctBy(p => p.Title.Trim(), StringComparer.OrdinalIgnoreCase).ToList();
                     _linkedListQueue.Clear();
                     foreach (var p in unicosLL) _linkedListQueue.AddLast(p);
                     break;
                 case StructureType.ListNative:
-                    var unicosL = _listQueue.DistinctBy(p => p.Title).ToList();
+                    var unicosL = _listQueue.DistinctBy(p => p.Title.Trim(), StringComparer.OrdinalIgnoreCase).ToList();
                     _listQueue.Clear();
                     _listQueue.AddRange(unicosL);
                     break;
